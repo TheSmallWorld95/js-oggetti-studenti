@@ -10,7 +10,7 @@
 var studenteA = {
   nome: "Fabio",
   cognome: "Colombo",
-  età: "25 anni",
+  eta: "25 anni",
 }
 var stringa = "";
 // Attraverso un ciclo(for-in) che si usa per gli oggetti
@@ -25,9 +25,9 @@ console.log(caratteristiche, studenteA[caratteristiche]);
 // stringa = studenteA.nome + " " + studenteA.cognome + " " + studenteA.età;
 // $("#prova").text(stringa);
 
-$(".studente1 .nome").text(studenteA.nome);
-$(".studente1 .cognome").text(studenteA.cognome);
-$(".studente1 .età").text(studenteA.età);
+$(".studente1 .nome").text("Nome: " + studenteA.nome);
+$(".studente1 .cognome").text("Cognome: " + studenteA.cognome);
+$(".studente1 .età").text("Età: " + studenteA.eta);
 
 
 
@@ -37,12 +37,12 @@ var classe = [
   {
     nome: "Luca",
     cognome: "Zannino",
-    età: "31 anni",
+    eta: "31 anni",
   },
   {
     nome: "Giacomo",
     cognome: "Casartelli",
-    età: "19 anni",
+    eta: "19 anni",
   }
 ];
 
@@ -52,30 +52,29 @@ for (var i = 0; i < classe.length; i++) {
   console.log(classe[i].nome + " " + classe[i].cognome);
 }
 
-$(".studente2 .nome").text(classe[0].nome);
-$(".studente2 .cognome").text(classe[0].cognome);
-$(".studente2 .età").text(classe[0].età);
+$(".studente2 .nome").text("Nome: " + classe[0].nome);
+$(".studente2 .cognome").text("Cognome: " + classe[0].cognome);
+$(".studente2 .età").text("Età: " + classe[0].eta);
 
-$(".studente3 .nome").text(classe[1].nome);
-$(".studente3 .cognome").text(classe[1].cognome);
-$(".studente3 .età").text(classe[1].età);
+$(".studente3 .nome").text("Nome: " + classe[1].nome);
+$(".studente3 .cognome").text("Cognome: " + classe[1].cognome);
+$(".studente3 .età").text("Età: " + classe[1].eta);
 
 // Attraverso un input-form sull'HTML invio(bottone al click)
 // le info che l'utente inserisce nel form
 //  riguardo 3 nuovi studenti(variabile-oggetto)
 $("button").click(function () {
-  var nome = $("input[name = nome]").val()
-  var cognome = $("input[name = cognome]").val()
-  var anni = $("input[name = età]").val()
+  var nome = "Nome: " + $("input[name = nome]").val()
+  var cognome ="Cognome: " + $("input[name = cognome]").val()
+  var anni = "Età: " + $("input[name = età]").val()
 
   var studente = {
     nome: nome,
     cognome: cognome,
-    età: anni,
+    eta: anni,
   };
 
   classe.push(studente);
-  console.log(classe);
 
 })
   // Tramite push dopo il click

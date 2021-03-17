@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+div.container {
+  display: flex;
+  padding-left: 30px;
+}
+
+div.card {
+  width: 200px;
+  height: 300px;
+  margin-right: 100px;
+  border: 1px solid #000;
+}
+
+div.card ul li {
+  list-style: none;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+div.form {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+div.form input {
+  margin-right: 15px;
+  padding: 10px;
+}
+
+div.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-bottom: 50px;
+  padding: 15px;
+  background-color: #F00;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+}
